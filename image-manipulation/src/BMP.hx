@@ -58,10 +58,6 @@ class BMP
     var rowSize : Int = Math.floor((dibHeader.bitsPerPixel * dibHeader.imageWidth + 31) / 32) * 4;
     padding = rowSize - dibHeader.imageWidth * 3;
 
-    trace('width...\t${dibHeader.imageWidth} px');
-    trace('height...\t${dibHeader.imageHeight} px');
-    trace('rowSize...\t$rowSize');
-
     // Position bytes input handle to pixel array location
     bytesInput.position = bmpHeader.pixelArrayOffset;
     // Populate color channels
