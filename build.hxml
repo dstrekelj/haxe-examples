@@ -1,0 +1,3 @@
+-cp image-manipulation/src
+-main Main
+-neko image-manipulation/bin/image-manipulation.n
