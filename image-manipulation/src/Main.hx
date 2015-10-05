@@ -2,6 +2,7 @@ class Main
 {
   static function main()
   {
+    // Use a different way of fetching bytes for non-sys platforms
     var bmp = new BMP(sys.io.File.getBytes('./baboon.bmp'));
 
     // Store channels separately for later reuse
